@@ -401,7 +401,7 @@ const hlp=
 🀄 Pinterest
 🀄 Carbon
 
-*🍁 This bot is modified by Toshiro created by Arus 🍁*
+*🍁 This bot is modified by Toshiro created by Arus 🍁*`
 const TOS = [
     {buttonId: '.info', buttonText: {displayText: '📤 Info'}, type: 1},
     {buttonId: '.profile', buttonText: {displayText: '🧧 Profile'}, type: 1}
