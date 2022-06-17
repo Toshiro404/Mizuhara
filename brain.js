@@ -326,7 +326,7 @@ break
 break
 case "help":
 const hlp=
-`*(❣️ω❣️) Konichiwa ${pushname} Senpai, I'm ZeroTwo*	
+`*(❣️ω❣️) Konichiwa 👋🏻 ${pushname} Darling, I'm ZeroTwo-desu*	
 
 ━━━━『 Dev 』━━━━
 
@@ -401,6 +401,8 @@ const hlp=
 🀄 Take 
 🀄 Pinterest
 🀄 Carbon
+━━━━━━━━━━━━
+  ゼロツー❤️
 ━━━━━━━━━━━━
 *🍁 modified by Toshiro created by Arus 🍁*`
 const dbut = [
@@ -827,7 +829,7 @@ if(q) { var Text =`📌 *Message - ${q}*\n*🍁 Group name - ${groupName}*` } el
 let menText = `${Text}\n*💫 ping by - ${pushname}*\n*🕛 time - ${time}*\n\n`
 for (let memNum of participants) {
     
-    if( groupAdmins.includes(memNum.id) === true ) { var emo = '👑'} else { var emo = '❄️'} 
+    if( groupAdmins.includes(memNum.id) === true ) { var emo = '👑'} else { var emo = '🧧'} 
     menText += `${emo} *@${memNum.id.split('@')[0]}*\n`
     //members_id.push(memNum.jid)
 }
@@ -1062,7 +1064,7 @@ case  'play': case 'ytplay': {
     if (!ter) return m.reply(`❌ No query provided!`)
     let yts = require("yt-search")
 let { yta  } = require('./lib/y2mate')
-m.reply(`🕣 Downloading ${ter}`)
+m.reply(`🎯 Downloading ${ter}`)
     let search = await yts(ter)
     let quality = args[1] ? args[1] : '128kbps'
     let media = await yta(search.all[0].url, quality)
@@ -1082,7 +1084,7 @@ case 'ytmp3': case 'ytaudio': case 'yta': {
     let { yta  } = require('./lib/y2mate')
     if (!ter) return m.reply(`❌ No query provided!`)
 		if (!isUrl(ter) && !ter.includes('https://youtube.com.com')) return m.reply("🔍 Please provide the youtube link")
-   m.reply(`🕣 Downloading ${ter}`)
+   m.reply(`🎯 Downloading ${ter}`)
     var search = await yts(ter)
     //console.log(search)
     // anu = search.videos[Math.floor(Math.random() * search.videos.length)]
@@ -1808,10 +1810,10 @@ break
                 for (let i of anu) {
                     //await sleep(1500)
 
-  let txt = `🔰</ _*Arus Broadcast*_ >🔰\n\n🍀 *Author:* ${pushname}\n\n🔖 *Message:* ${bct}`
+  let txt = `🧧</ _*Arus Broadcast*_ >🧧\n\n🍀 *Author:* ${pushname}\n\n🔖 *Message:* ${bct}`
 //const stick=fs.readFileSync(`./src/right.webp`)
 //await arus.sendMessage(m.chat,{sticker:stick},{quoted:m})
-await arus.sendMessage(i, { video: { url: "https://telegra.ph/file/3c3f94c8463e7f9c29d73.mp4" }, mimetype: 'video/mp4', fileName: `bc.mp4`, caption: `${txt}` })
+await arus.sendMessage(i, { video: { url: "https://telegra.ph/file/6298fd81b0f306ba90de7.mp4" }, mimetype: 'video/mp4', fileName: `bc.mp4`, caption: `${txt}` })
                     }
                 m.reply(`Successfuly Broadcasted in ${anu.length} Groups`)
             }
