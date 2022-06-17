@@ -412,7 +412,6 @@ const TOS = [
         footer: '©ZeroTwo by arus',
         buttons: AKU,
         headerType: 4
-       }
     
 
 }
