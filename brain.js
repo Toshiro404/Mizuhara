@@ -174,6 +174,7 @@ case '':
 {buttonId: `${prefix}info`, buttonText: {displayText: 'Bot status'}, type: 1}
 ]
 let buttonMessaged = {
+        image: {url:"https://telegra.ph/file/aa7bc52a1723afeee55a8.jpg"},
         text: `Hey *${pushname}* Darling I am ${name}. Do you mean: ${prefix}help`,
         footer: '©ZeroTwo-ARUS',
         buttons: dbut,
@@ -325,7 +326,7 @@ break
 break
 case "help":
 const hlp=
-` *(❣️ω❣️) Konichiwa ${pushname} Senpai, I'm ZeroTwo*	
+`*(❣️ω❣️) Konichiwa ${pushname} Senpai, I'm ZeroTwo*	
 
 ━━━━『 Dev 』━━━━
 
@@ -400,11 +401,11 @@ const hlp=
 🀄 Take 
 🀄 Pinterest
 🀄 Carbon
-
-*🍁 This bot is modified by Toshiro created by Arus 🍁*`
+━━━━━━━━━━━━
+*🍁 modified by Toshiro created by Arus 🍁*`
 const dbut = [
-    {buttonId: '=info', buttonText: {displayText: 'Info'}, type: 1},
-    {buttonId: '=profile', buttonText: {displayText: 'Profile'}, type: 1}
+    {buttonId: '${prefix}info', buttonText: {displayText: 'Info'}, type: 1},
+    {buttonId: '${prefix}profile', buttonText: {displayText: 'Profile'}, type: 1}
     ]
     let buttonMessaged = {
         file: arus.sendMessage(m.chat,{video:fs.readFileSync('./src/help.mp4'),gifPlayback:true,caption:hlp},{quoted:m}),
