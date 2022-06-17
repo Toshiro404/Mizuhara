@@ -402,15 +402,15 @@ const hlp=
 🀄 Carbon
 
 *🍁 This bot is modified by Toshiro created by Arus 🍁*`
-const TOS = [
-    {buttonId: '.info', buttonText: {displayText: '📤 Info'}, type: 1},
-    {buttonId: '.profile', buttonText: {displayText: '🧧 Profile'}, type: 1}
+const dbut = [
+    {buttonId: '=info', buttonText: {displayText: 'Info'}, type: 1},
+    {buttonId: '=profile', buttonText: {displayText: 'Profile'}, type: 1}
     ]
     let TOSo = {
-        file: arus.sendMessage(m.chat,{video:fs.readFileSync('./src/assests/help.mp4'),gifPlayback:true,caption:hlp},{quoted:m}),
+        file: arus.sendMessage(m.chat,{video:fs.readFileSync('./src/help.mp4'),gifPlayback:true,caption:hlp},{quoted:m}),
         caption: hlp,
-        footer: '©ZeroTwo by arus',
-        buttons: AKU,
+        footer: '©ZeroTwo by ArUs',
+        buttons: dbut,
         headerType: 4
     
 
