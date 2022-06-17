@@ -51,7 +51,7 @@ module.exports = arus = async (arus, m, chatUpdate, store) => {
         const botNumber = await arus.decodeJid(arus.user.id)
         const isCreator = [botNumber, ...global.owner].map(v => v.replace(/[^0-9]/g, '') + '@s.whatsapp.net').includes(m.sender)
         const itsMe = m.sender == botNumber ? true : false
-		 const botName = process.env.NAME || "Mizuhara"
+		 const botName = process.env.NAME || "ZeroTwo"
 		const ter = args.join(' ') 
         const contant = q = args.join(" ")
         const quoted = m.quoted ? m.quoted : m
@@ -174,7 +174,7 @@ case '':
 {buttonId: `${prefix}info`, buttonText: {displayText: 'Bot status'}, type: 1}
 ]
 let buttonMessaged = {
-        text: `Hey *${pushname}* I am ${name}. Do you mean: ${prefix}help`,
+        text: `Hey *${pushname}* Darling I am ${name}. Do you mean: ${prefix}help`,
         footer: '@ARUS',
         buttons: dbut,
         headerType: 4
@@ -212,7 +212,7 @@ break
                 let anu = groups.map(v => v.id)
 	let ur = anu.length
 	let b = await user.countDocuments({ ban : "true" })
-let ter = `🧧 *Commands*: 55\n🔧 *Users*: ${tr}\n💚 *Groups*: ${ur}\n🚫 *Ban_Users*: ${b}\n⛩ *Moderators*: ${owner.length}`
+let ter = `🧧 *Commands*: 55\n🔧 *Users*: ${tr}\n💠 *Groups*: ${ur}\n🚫 *Ban_Users*: ${b}\n⛩ *Moderators*: ${owner.length}`
 console.log(ter)
    let buttonMessaged = {
         text: ter,
@@ -240,7 +240,7 @@ break
 		   case "h":
 		   case "help":
 		   case 'menu':{ 
-			     arus.sendMessage(m.chat, { text: menu, contextInfo:{"externalAdReply": {"title": `WhatsApp-Botto`,"body": `𝐌𝐢𝐳𝐮𝐡𝐚𝐫𝐚`, "previewType": "PHOTO","thumbnailUrl": ``,"thumbnail": await getBuffer("https://i.pinimg.com/736x/01/bd/31/01bd31fb1b185e38d9f605b0f8f16b90.jpg"),"sourceUrl": "https://kanojo-okarishimasu.fandom.com/wiki/Chizuru_Ichinose"}}}, { quoted: m})
+			     arus.sendMessage(m.chat, { text: menu, contextInfo:{"externalAdReply": {"title": `ZeroTwo a Whatsapp bot`,"body": ` Modified by Toshiro Created by Arus`, "previewType": "PHOTO","thumbnailUrl": ``,"thumbnail": await getBuffer("https://telegra.ph/file/520d31f754a68f57ea340.jpg"),"sourceUrl": "https://kanojo-okarishimasu.fandom.com/wiki/Chizuru_Ichinose"}}}, { quoted: m})
  }
 			   break
 		   case 'session': {
