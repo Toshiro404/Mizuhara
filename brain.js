@@ -406,7 +406,7 @@ const dbut = [
     {buttonId: '=info', buttonText: {displayText: 'Info'}, type: 1},
     {buttonId: '=profile', buttonText: {displayText: 'Profile'}, type: 1}
     ]
-    let TOSo = {
+    let buttonMessaged = {
         file: arus.sendMessage(m.chat,{video:fs.readFileSync('./src/help.mp4'),gifPlayback:true,caption:hlp},{quoted:m}),
         caption: hlp,
         footer: '©ZeroTwo by ArUs',
