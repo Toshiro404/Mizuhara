@@ -213,7 +213,7 @@ break
                 let anu = groups.map(v => v.id)
 	let ur = anu.length
 	let b = await user.countDocuments({ ban : "true" })
-let ter = `🧧 *Commands*: 55\n🔧 *Users*: ${tr}\n💠 *Groups*: ${ur}\n🚫 *Ban_Users*: ${b}\n⛩ *Moderators*: ${owner.length}`
+let ter = `*━━━━『🀄 ARUS 🀄』━━━━* 📚 *Commands*: 55\n👥 *Users*: ${tr}\n📬 *Groups*: ${ur}\n🚫 *Ban_Users*: ${b}\n⛩ *Moderators*: ${owner.length}`
 console.log(ter)
    let buttonMessaged = {
         text: ter,
@@ -326,7 +326,7 @@ break
 break
 case "help":
 const hlp=
-`*(❣️ω❣️) Konichiwa 👋🏻 ${pushname} Darling, I'm ZeroTwo-desu*	
+`*(❣️ω❣️)Konichiwa watashiwa 👋🏻 ${pushname} Darling, I'm ZeroTwo-desu*	
 
 ━━━━『 Dev 』━━━━
 
@@ -857,7 +857,7 @@ if (!isBotAdmins) return m.reply("❌ Cannot execute without being admin")
 ]
 const listMessage = {
   text: "Choose the required setting",
-  footer: "@ARUS",
+  footer: "©ZeroTwo-ARUS",
   title: "",
   buttonText: "settings",
   sections
@@ -901,7 +901,7 @@ return m.reply('💮 Successfully Enabled *Mod*')
 		 } else {
 		 if(gc.mod == "true") return m.reply("🛡 *Mod* is already enabled")
 									await group.updateOne({ id: m.chat }, {mod: "true"})
-							return m.reply('💮 Successfully Enabled *Mod*')
+							return m.reply('✅ Successfully Enabled *Mod*')
 m.reply(gc.mod)							
 						}							
 				})
@@ -913,7 +913,7 @@ return m.reply("💮 Successfully Enabled *Events*")
 		 } else {
 		 if(gc.events == "true") return m.reply("🗞 *Events* is already enabled")
 									await group.updateOne({ id: m.chat }, {events: "true"})
-							return m.reply("💮 Successfully Enabled *Events*")
+							return m.reply("✅ Successfully Enabled *Events*")
 //m.reply(gc.events)							
 						}							
 				})
@@ -921,9 +921,9 @@ return m.reply("💮 Successfully Enabled *Events*")
 									    group.findOne({ id : m.chat }).then(async(gc) => {
          if (!gc) {
 			 await new group({ id: m.chat, invite: "true" }).save()	
-return m.reply("🎏 Successfully Enabled *Invite*")
+return m.reply("✅ Successfully Enabled *Invite*")
 		 } else {
-		 if(gc.invite == "true") return m.reply("🖌️ *Invite* is already enabled")
+		 if(gc.invite == "true") return m.reply("🧨 *Invite* is already enabled")
 									await group.updateOne({ id: m.chat }, {invite: "true"})
 								console.log(gc.invite)
 							return m.reply("🌐 Successfully Enabled *Invite*")
@@ -935,13 +935,13 @@ return m.reply("🎏 Successfully Enabled *Invite*")
 									    group.findOne({ id : m.chat }).then(async(gc) => {
          if (!gc) {
 			 await new group({ id: m.chat, nsfw: "true" }).save()	
-return m.reply("💫 Successfully Enabled *NSFW*")
+return m.reply("🥵 Successfully Enabled *NSFW*")
 		 } else {
-		 if(gc.nsfw == "true") return m.reply("💫 *NSFW* is already enabled")
+		 if(gc.nsfw == "true") return m.reply("🥵 *NSFW* is already enabled")
 									await group.updateOne({ id: m.chat }, {nsfw: "true"})
 								console.log(gc.invite)
-							return m.reply("💫 Successfully Enabled *NSFW*")
-							
+							return m.reply("🥵 Successfully Enabled *NSFW*")
+						
 //m.reply(gc.events)							
 						}							
 				})
@@ -966,7 +966,7 @@ return m.reply("🛡 *Mod* is already disabled")
 		 } else {
 		 if(usr.mod !== "true") return m.reply("🛡 *Mod* is already disabled")
 									await group.updateOne({ id: m.chat }, {mod: "false"})
-return m.reply("🧩 Successfully Disabled *Mod*");
+return m.reply("❌ Successfully Disabled *Mod*");
 						}							
 				})
  }else if (args[0] == "events") { 
@@ -976,27 +976,27 @@ group.findOne({ id : m.chat }).then(async(usr) => {
 		 } else {
 		 if(usr.events !== "true") return m.reply("🗞 *Events* is already disabled")
 									await group.updateOne({ id: m.chat }, {events: "false"})
-return m.reply("🧩 Successfully Disabled *Events*"); 
+return m.reply("❌ Successfully Disabled *Events*"); 
 						}							
 				})
  } else if (args[0] == "invite") { 
 group.findOne({ id : m.chat }).then(async(usr) => {
          if (!usr) {
- return m.reply("🎏 *Invite* is already disabled")
+ return m.reply("❌ *Invite* is already disabled")
 		 } else {
 		 if(usr.invite !== "true") return m.reply("🎏 *Invite* is already disabled")
 									await group.updateOne({ id: m.chat }, {invite: "false"})
-return m.reply("🧩 Successfully Disabled *Invite*"); 
+return m.reply("❌ Successfully Disabled *Invite*"); 
 						}							
 				})
  } else if (args[0] == "nsfw") { 
 group.findOne({ id : m.chat }).then(async(usr) => {
          if (!usr) {
- return m.reply("🧧 *NSFW* is already disabled")
+ return m.reply("❌ *NSFW* is already disabled")
 		 } else {
 		 if(usr.nsfw !== "true") return m.reply("🧧 *NSFW* is already disabled")
 									await group.updateOne({ id: m.chat }, {nsfw: "false"})
-return m.reply("🧩 Successfully Disabled *NSFW*"); 
+return m.reply("❌ Successfully Disabled *NSFW*"); 
 						}							
 				})
  }
