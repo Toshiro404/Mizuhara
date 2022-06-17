@@ -325,7 +325,7 @@ break
 break
 case "help":
 const hlp=
-` *U^I^U ♡ Konichiwa ${pushname} Senpai, I'm Mizuhara*	
+` *(❣️ω❣️) Konichiwa ${pushname} Senpai, I'm ZeroTwo*	
 
 ━━━━『 Dev 』━━━━
 
