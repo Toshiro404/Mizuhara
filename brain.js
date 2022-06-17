@@ -175,7 +175,7 @@ case '':
 ]
 let buttonMessaged = {
         text: `Hey *${pushname}* Darling I am ${name}. Do you mean: ${prefix}help`,
-        footer: '@ARUS',
+        footer: '©ZeroTwo-ARUS',
         buttons: dbut,
         headerType: 4
     }
@@ -216,7 +216,7 @@ let ter = `🧧 *Commands*: 55\n🔧 *Users*: ${tr}\n💠 *Groups*: ${ur}\n🚫 
 console.log(ter)
    let buttonMessaged = {
         text: ter,
-        footer: '@ARUS',
+        footer: '©ZeroTwo-ARUS',
         buttons: dbut,
         headerType: 4
     }
@@ -237,12 +237,7 @@ console.log(err)
 }
 }
 break
-		   case "h":
-		   case "help":
-		   case 'menu':{ 
-			     arus.sendMessage(m.chat, { text: menu, contextInfo:{"externalAdReply": {"title": `ZeroTwo a Whatsapp bot`,"body": ` Modified by Toshiro Created by Arus`, "previewType": "PHOTO","thumbnailUrl": ``,"thumbnail": await getBuffer("https://telegra.ph/file/520d31f754a68f57ea340.jpg"),"sourceUrl": "https://kanojo-okarishimasu.fandom.com/wiki/Chizuru_Ichinose"}}}, { quoted: m})
  }
-			   break
 		   case 'session': {
 			   if (!isCreator) return m.reply("📍The user of this command must be the owner of the bot")
 			   const session = require(`./${sessionName}.json`)
@@ -329,9 +324,97 @@ break
 
 break
 case "help":
-case 'menu':{
-	
-	
+const hlp=
+` *U^I^U ♡ Konichiwa ${pushname} Senpai, I'm Mizuhara*	
+
+━━━━『 Dev 』━━━━
+
+⛩️ Update 	
+⛩️ broadcast
+⛩️ Ban
+⛩️ Unban
+⛩️ Session
+⛩️ Join
+
+━━━━『 General 』━━━━
+
+🧧 Help
+🧧 Delete
+🧧 Info
+🧧 Rank
+🧧 Profile
+
+━━━━『 Fun 』━━━━
+
+🎉 Ship
+🎉 Advice
+🎉 Quote
+🎉 Leaderboard
+🎉 React
+🎉 Fact 
+🎉 Bot
+
+━━━━『 Media 』━━━━
+
+📺 Yta
+📺 Ytv
+📺 Play
+📺 Gify
+📺 Yts
+📺 Lyrics
+
+━━━━『 Moderation 』━━━━
+
+🎯 Demote
+🎯 Remove
+🎯 Ping
+🎯 Promote
+🎯 Deact
+🎯 Act
+🎯 Invite
+🎯 Group
+🎯 Section
+🎯 Setdesc
+
+━━━━『 Weeb 』━━━━
+
+🧨 Anime 
+🧨 Manga
+🧨 Character
+🧨 Haigusha
+🧨 Neko 
+🧨 Waifu
+🧨 Pokemon
+
+━━━━『 Utils 』━━━━
+
+🀄 Google
+🀄 Image 
+🀄 Meme
+🀄 Subreddit 
+🀄 Tourl
+🀄 Img
+🀄 Iguser
+🀄 Gif
+🀄 Sticker
+🀄 Take 
+🀄 Pinterest
+🀄 Carbon
+
+*🍁 This bot is modified by Toshiro created by Arus 🍁*
+const TOS = [
+    {buttonId: '.info', buttonText: {displayText: '📤 Info'}, type: 1},
+    {buttonId: '.profile', buttonText: {displayText: '🧧 Profile'}, type: 1}
+    ]
+    let TOSo = {
+        file: arus.sendMessage(m.chat,{video:fs.readFileSync('./src/assests/help.mp4'),gifPlayback:true,caption:hlp},{quoted:m}),
+        caption: hlp,
+        footer: '©ZeroTwo by arus',
+        buttons: AKU,
+        headerType: 4
+       }
+    
+
 }
 break
 case "carbon":
